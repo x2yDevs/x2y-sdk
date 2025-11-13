@@ -1,0 +1,43 @@
+{
+  "name": "x2y-dev-tools-sdk",
+  "version": "1.0.0",
+  "description": "Advanced API monitoring and code refactoring SDK by x2y dev tools",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "docs": "typedoc src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "api",
+    "monitoring",
+    "refactoring",
+    "sdk",
+    "x2y"
+  ],
+  "author": "x2y dev tools",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x2ydevs/x2y-sdk.git"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.14",
+    "eslint": "^8.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.5",
+    "typedoc": "^0.25.0"
+  }
+}
