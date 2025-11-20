@@ -1,6 +1,6 @@
 {
   "name": "x2y-dev-tools-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced API monitoring and code refactoring SDK by x2y dev tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
