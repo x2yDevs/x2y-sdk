@@ -1,7 +1,11 @@
 node_modules/
 dist/
+coverage/
+.nyc_output/
+*.log
+.DS_Store
+.env
+package-lock.json
 *.test.js
 x2y-*.js
 x2y-*.ts
-*.log
-.DS_Store

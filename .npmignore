@@ -1,0 +1,8 @@
+node_modules
+test.js
+*.test.js
+*.spec.js
+.git
+.gitignore
+README.md
+package-lock.json
