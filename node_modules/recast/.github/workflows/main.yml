@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ["22.x", "24.x", "26.x"]
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: npm
+
+      - name: Install, check formatting, build and test
+        run: |
+          npm ci
+          npm run format:check
+          npm test

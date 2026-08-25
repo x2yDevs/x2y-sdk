@@ -1,0 +1,23 @@
+{
+  "name": "x2y-sdk-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/parser": "^7.29.8",
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "recast": "^0.24.0",
+    "x2y-dev-tools-sdk": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/pg": "^8.23.1"
+  }
+}
