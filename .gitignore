@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.test.js
+x2y-*.js
+x2y-*.ts
+*.log
+.DS_Store
